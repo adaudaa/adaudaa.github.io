@@ -76,3 +76,14 @@ footer p {
     display: block;
     margin: 20px a
 }
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    width: 50%;
+    height: 10%;
+    display: inline-block;
+}
+
