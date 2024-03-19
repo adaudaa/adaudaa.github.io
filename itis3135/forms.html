@@ -26,8 +26,44 @@
         </nav>
     </header>
     <main>
-        <h2>Home</h2>
-        <p>Hello, you've made it to my 3135 Course page</p>
+        <h2>Contact Us</h2>
+        <div class="form-box">
+        <form action="#">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name"><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number"><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email"><br>
+
+            <label>Favorite Color:</label><br>
+            <input type="checkbox" id="color1" name="color1" value="Blue">
+            <label for="color1">Blue</label><br>
+            <input type="checkbox" id="color2" name="color2" value="Green">
+            <label for="color2">Green</label><br>
+            <input type="checkbox" id="color3" name="color3" value="Red">
+            <label for="color3">Red</label><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+
+            <label for="product">Product:</label>
+            <select id="product" name="product">
+                <option value="" disabled selected>Select an option</option>
+                <option value="sculpture">Sculpture</option>
+                <option value="ornament">Ornament</option>
+                <option value="figurine">Figurine</option>
+            </select><br>
+
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
     </main>
     <footer>
         <p><strong><em>"Where Legends Come to Life"</em></strong></p>
