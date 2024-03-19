@@ -33,3 +33,21 @@ figure{
     text-align: center;
     font-style: italic;
 }
+
+table,
+td {
+    border: 1px solid #333;
+    padding: 8px; 
+}
+
+table tr:{
+    background-color: darkgray;
+}
+
+th {
+    background-color: #005035; 
+}
+
+caption {
+    font-weight: bold; 
+}
