@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adam Dauda's Almighty Dragon || ITIS 3135 First Scripts</title>
+    <title>Adam Dauda's Almighty Dragon || ITIS 3135 First Script</title>
     <link rel="stylesheet" href="styles/default.css">
 </head>
 <body>
@@ -12,17 +11,44 @@
         <div data-include="components/header.html"></div>
     </header>
     <main>
-        <h2>First Scripts</h2>
-        <p>First Scripts page</p>
+        <h2>SCRIPTS</h2>
+        <div id="scripts">
+            <h3>Current date and time is: <span id="date-time"></span></h3>
+        </div>
+        <div>
+            <form id="query">
+                <label for="full-name">Enter your Name:
+                    <input id="full-name" name="full-name" type="text" required>
+                </label>
+                <br><br>
+                <label for="feeling">How are you feeling?
+                    <input id="feeling" name="feeling" type="text" required>
+                </label>
+                <br><br>
+                <label for="numberInput">Enter your favorite number (0 to 10):
+                    <input type="number" id="numberInput" min="0" max="10" required>
+                </label>
+                <br><br>
+                <input id="Submit" type="submit" value="Submit" onclick="submitInfo(); return false;">
+                <h3 id="demo"></h3>
+            </form>
+        </div>
     </main>
+    <h4>
+        <button onclick="dragonFacts()">Dragon Facts</button>
+        <button onclick="mythicalCreatures()">Mythical Creatures</button>
+        <button onclick="craftingMaterials()">Crafting Materials</button>
+        <button onclick="featuredArtisan()">Featured Artisan</button>
+        <p id="output"></p>
+    </h4>
+    <script src="scripts/defaultscripts.js"></script>
     <footer>
         <div data-include="components/footer.html"></div>
     </footer>
     <script>
         document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
-             document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-     </script>
-     <script src="scripts/HTMLInclude.min.js"></script>
+        document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
 </body>
-
 </html>
