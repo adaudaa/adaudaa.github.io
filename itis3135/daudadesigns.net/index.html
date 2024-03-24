@@ -1,18 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dauda Designs Page</title>
+    <title>Dauda Designs Inc.</title> <!-- Color scheme URL: https://coolors.co/ef7674-000100-94c5cc-b4d2e7-f8f8f8 -->
     <style>
-        body{
-            background-color: aliceblue;
-            color: tomato;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F8F8F8;
+            color: #000100;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        header {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            color: #000100;
+            font-size: 3rem;
+        }
+
+        h2 {
+            text-align: left;
+        }
+
+        h5 {
+            color: #EF7674;
+        }
+
+        main {
+            padding: 20px;
+            flex: 1;
+        }
+
+        ul {
+            list-style-type: square;
+        }
+
+        footer {
+            background-color: #B4D2E7;
+            padding: 10px;
+            text-align: center;
+            color: #000100;
+        }
+
+        img {
+            width: 30%;
+            height: 30%;
+            margin-top: 10px;
+        }
+
+        figure {
+            text-align: center;
         }
     </style>
 </head>
+
 <body>
-    <p> This is the design page of Dauda Designs</p>
-    
+    <header>
+        <h1>Dauda Designs</h1> <img src="logo.png" alt="Dauda Designs Inc. Logo" width="50" height="50">
+    </header>
+    <main>
+        <h2>Dauda Designs Inc. Services</h2>
+        <p> Dauda Designs Inc. is a leading design and consulting firm that specializes in creating innovative solutions
+            for businesses of all sizes. With our team of experienced professionals, we strive to deliver exceptional
+            results that exceed our clients' expectations. </p>
+        <ul>
+            <li>Custom web design and development</li>
+            <li>Responsive and mobile-friendly designs</li>
+            <li>E-commerce solutions</li>
+            <li>Branding and logo design</li>
+            <li>SEO and digital marketing strategies</li>
+        </ul>
+        <p> At Dauda Designs Inc., we are committed to helping our clients achieve their goals through cutting-edge
+            technology and creative design. Contact us today to learn how we can help your business succeed! </p>
+        <h5> Email: info@daudadesignsinc.co<br> Phone: (555) 123-4567<br> Address: 123 Main St, Anytown, USA </h5>
+    </main>
+    <footer>
+        <p>Page Built by Dauda Designs</a> &copy; 2024</p> <a
+            href="https://validator.w3.org/check?uri=referer" id="validation_link_html"> <img
+                style="border:0;width:88px;height:31px"
+                src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!"> </a> <a
+            href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css"> <img
+                style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!"> </a>
+    </footer>
+    <script> document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href); document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href); </script>
 </body>
+
 </html>
