@@ -1,8 +1,9 @@
-// Display current date and time
 function displayDateTime() {
     const now = new Date();
-    const datetime = document.getElementById("date-time");
-    datetime.innerHTML = now.toLocaleString();
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: '2-digit', hour12: true };
+    const formattedDateTime = now.toLocaleDateString('en-US', options);
+    const displayedDateTime = `Today is ${formattedDateTime}`; 
+    document.getElementById("date-time").innerHTML = displayedDateTime;
 }
 
 // Submit user info and display greeting
