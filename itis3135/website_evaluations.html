@@ -4,28 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adam Dauda's Almighty Dragon || ITIS 3135 HomePage</title>
+    <title>Adam Dauda's Almighty Dragon || ITIS 3135 Website Evaluations</title>
     <link rel="stylesheet" href="styles/default.css">
 </head>
 
 <body>
     <header>
-        <h1 class="contain">Adam Dauda's Almighty Dragon || ITIS 3135 </h1>
-        <nav>
-            <a href="./">Home</a>
-            ||
-            <a href="introduction.html">Introduction</a>
-            ||
-            <a href="contract.html">Contract</a>
-            ||
-            <a href="about.html">About Page</a>
-            ||
-            <a href="tables.html">Tables</a>
-            ||
-            <a href="forms.html">Forms</a>
-            ||
-            <a href="website_evaluations.html">Website Evaluations</a>
-        </nav>
+        <div data-include="components/header.html"></div>
     </header>
     <main>
         <h2>Website Evaluations</h2>
@@ -51,21 +36,7 @@
         </section>
     </main>
     <footer>
-        <p><strong><em>"Where Legends Come to Life"</em></strong></p>
-        <nav>
-            <a href="https://webpages.charlotte.edu/adauda/">Charlotte.edu</a>
-            ||
-            <a href="https://github.com/adaudaa">Github</a>
-            ||
-            <a href="https://adaudaa.github.io/itis3135/">Github.io</a>
-            ||
-            <a href="https://www.freecodecamp.org/adauda">freeCodeCamp</a>
-            ||
-            <a href="https://www.codecademy.com/profiles/adaudaa">Codeacademy</a>
-            ||
-            <a href="https://www.linkedin.com/in/adamdauda/">LinkedIn</a>
-
-        </nav>
+        <div data-include="components/footer.html"></div>
         <p>Page Built by <a href="daudadesigns.net/">Dauda Designs</a> &copy; 2024</p>
 
         <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
@@ -81,6 +52,7 @@
         document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
              document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
      </script>
+     <script src="scripts/HTMLInclude.min.js"></script>
 </body>
 
 </html>
