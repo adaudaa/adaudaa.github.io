@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Dauda's Almighty Dragon || ITIS 3135 Calculator</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Calculator</h2>
+        <p>Toutorial Not Needed</p>
+        <div class="calculator">
+            <input type="text" id="display" disabled><br>
+            <button class="calc-btn number">7</button>
+            <button class="calc-btn number">8</button>
+            <button class="calc-btn number">9</button>
+            <button class="calc-btn clear">C</button>
+            <button class="calc-btn number">4</button>
+            <button class="calc-btn number">5</button>
+            <button class="calc-btn number">6</button>
+            <button class="calc-btn operator">*</button><br>
+            <button class="calc-btn number">1</button>
+            <button class="calc-btn number">2</button>
+            <button class="calc-btn number">3</button>
+            <button class="calc-btn operator">-</button><br>
+            <button class="calc-btn number">0</button>
+            <button class="calc-btn decimal">.</button>
+            <button class="calc-btn operator">/</button>
+            <button class="calc-btn operator">+</button>
+            <button class="calc-btn equal">=</button>
+        </div>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+             document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+     </script>
+     <script src="scripts/HTMLInclude.min.js"></script>
+     <script src="scripts/calculator_try.js"></script>
+</body>
+
+</html>
