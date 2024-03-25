@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BYO Intro</title>
     <link rel="stylesheet" href="styles/default.css">
-    <script src="scripts/survey.js"></script>
+
 </head>
 
 <body>
@@ -16,58 +16,62 @@
     <main>
         <h2>BYO Intro</h2>
         <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
-        <form id="introForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
+        <form class="byo-form" id="form">
+            <div id="byo">
+                <label for="name">Name: </label>
+                <input type="text" id="name" placeholder="Enter your name" required><br><br>
 
-            <label for="mascot">Mascot:</label>
-            <input type="text" id="mascot" name="mascot" required><br><br>
+                <label for="mascot">Mascot: </label>
+                <input type="text" id="mascot" placeholder="Enter your mascot" required><br><br>
 
-            <label for="image">Add Your Image:</label>
-            <input type="file" id="image" name="image" accept=".png, .jpg"><br><br>
-            
-            <label for="imageCaption">Image Caption:</label>
-            <input type="text" id="imageCaption" name="imageCaption" required><br><br>
+                <label for="image">Image (PNG or JPG):</label>
+                <input type="file" id="image" accept=".png, .jpg" required><br><br>
 
-            <label for="personalBackground">Personal Background:</label>
-            <textarea id="personalBackground" name="personalBackground" required></textarea><br><br>
+                <label for="caption">Image Caption:</label>
+                <input type="text" id="caption" placeholder="Enter an image caption" required><br><br>
 
-            <label for="professionalBackground">Professional Background:</label>
-            <textarea id="professionalBackground" name="professionalBackground" required></textarea><br><br>
+                <label for="personal">Personal Background: </label>
+                <textarea id="personal" placeholder="Enter personal background" required></textarea><br><br>
 
-            <label for="academicBackground">Academic Background:</label>
-            <textarea id="academicBackground" name="academicBackground" required></textarea><br><br>
+                <label for="professional">Professional Background: </label>
+                <textarea id="professional" placeholder="Enter professional background" required></textarea><br><br>
 
-            <label for="webDevBackground">Background in Web Development:</label>
-            <textarea id="webDevBackground" name="webDevBackground" required></textarea><br><br>
-
-            <label for="primaryComputer">Primary Computer Platform:</label>
-            <input type="text" id="primaryComputer" name="primaryComputer" required><br><br>
-
-            <label for="courses">Courses currently taking:</label>
-            <div id="courseList">
-                <input type="text" name="course[]" required>
-                <button type="button" onclick="addCourse()">Add Course</button>
-            </div><br><br>
-
-            <label for="funnyThing">Funny thing?</label>
-            <textarea id="funnyThing" name="funnyThing"></textarea><br><br>
-
-            <label for="anythingElse">Anything else?</label>
-            <textarea id="anythingElse" name="anythingElse"></textarea><br><br>
-
-            <label><input type="checkbox" id="agree" name="agree" required> I understand that what is on this page is
-                not password protected and I will not put anything here
-                that I don't want publicly available.</label><br><br>
-
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
+                <label for="academic">Academic Background: </label>
+                <textarea id="academic" placeholder="Enter academic background" required></textarea><br><br>
+                
+                <label for="webdev">Web Development Background: </label>
+                <textarea id="webdev" placeholder="Enter web development background" required></textarea><br><br>
+                
+                <label for="platform">Primary Computer Platform:</label>
+                <input type="text" id="platform" placeholder="Enter computer platform" required><br><br>
+                
+                <label for="coursesTaking">Courses I'm Taking: </label>
+                <div id="coursesInput"></div>
+                <input type="button" id="coursesTaking" value="Add Course"><br><br>
+                
+                <label for="funny">Funny Thing? </label>
+                <input type="text" id="funny" placeholder="Make us laugh"><br><br>
+                
+                <label for="anything">Anything Else?</label>
+                <input type="text" id="anything" placeholder="Enter anything else"><br><br>
+                
+                <fieldset>
+                    <label>
+                        <input type="checkbox" id="agreement">
+                        "I understand that what is on this page is not password protected and 
+                        I will not put anything here that I don’t want publicly available."
+                    </label>
+                </fieldset><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>  
         </form>
     </main>
     <footer>
         <div data-include="components/footer.html"></div>
     </footer>
     <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/survey.js"></script>
 </body>
 
 </html>
