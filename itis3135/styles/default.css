@@ -116,6 +116,7 @@ input[type="submit"]:hover {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .form-box input[type="checkbox"],
@@ -175,7 +176,7 @@ input[type="submit"]:hover {
 .calculator {
     max-width: 300px;
     margin: 0 auto;
-    background-color: #f2f2f2;
+    background-color: #f2f2f271;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -245,3 +246,70 @@ input[type="submit"]:hover {
   p {
     text-align: center;
 }
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f271;
+    border-radius: 5px;
+  }
+  
+  .form-container div {
+    margin-bottom: 10px;
+  }
+  
+  .form-container label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .form-container input,
+  .form-container select {
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+  }
+  
+  .form-container button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #005035;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .button-container button {
+    padding: 10px 20px;
+    background-color: #005035;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  #results,
+  #results_table {
+    margin-top: 10px;
+  }
+  
+  #results_table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #results_table th,
+  #results_table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }

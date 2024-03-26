@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adam Dauda's Almighty Dragon || ITIS 3135 Arrays</title>
+  <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+
+  <main>
+    <h2>Arrays</h2>
+
+    <div class="form-container">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+      </div>
+      <div>
+        <label for="salary">Salary:</label>
+        <input type="text" id="salary" name="salary">
+      </div>
+      <button id="addBtn">Add Salary</button>
+
+      <div>
+        <label for="employeeSelect">Select Employee:</label>
+        <select id="employeeSelect"></select>
+      </div>
+      <div>
+        <label for="newSalary">New Salary:</label>
+        <input type="text" id="newSalary" name="newSalary">
+      </div>
+      <button id="modifyBtn">Modify Salary</button>
+    </div>
+
+    <div class="button-container">
+      <button id="displayResultsBtn">Display Results</button>
+      <div id="results"></div>
+    </div>
+
+    <div class="button-container">
+      <button id="displaySalaryBtn">Display Salary</button>
+      <table id="results_table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Salary</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+
+  <script>
+    document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+    document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+  </script>
+
+  <script src="scripts/HTMLInclude.min.js"></script>
+  <script src="scripts/arrays.js"></script>
+</body>
+</html>
